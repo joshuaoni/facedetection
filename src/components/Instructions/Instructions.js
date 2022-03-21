@@ -1,7 +1,7 @@
 import React from 'react';
 import './Instructions.css';
 import got1 from './got.png';
-import teyonah1 from './teyonah.png';
+import teyonah1 from './PZGS9117.JPEG';
 import teyonahFace from './teyonah-face.png';
 import gotFace1 from './got-face1.png';
 
