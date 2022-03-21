@@ -1,0 +1,20 @@
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: #f2fdf9;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-width: 1px;
+}
+
+.logo-name {
+    font-family: 'UNITED BRK';
+    margin: 0px;
+    font-size: 120%;
+}
+
+

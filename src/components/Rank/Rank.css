@@ -1,0 +1,25 @@
+.rank {
+    padding-top: 18%;
+    font-size: 250%;
+}
+
+@media screen and (min-width: 35em) and (max-width: 60em) {
+    .rank {
+        font-size: 200%;
+        padding-top: 23%;
+    }
+}
+
+@media screen and (max-width: 45.5em) {
+    .rank {
+        font-size: 160%;
+        padding-top: 28%;
+    }
+}
+
+@media screen and (max-width: 36.7em) {
+    .rank {
+        font-size: 120%;
+        padding-top: 32%;
+    }
+}

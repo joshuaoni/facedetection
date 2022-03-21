@@ -1,0 +1,68 @@
+.fullPage article {
+    border-color: rgba(144,238,144,0.5);
+    box-shadow: 0 0 0px 2px rgba(144,238,144,0.2);
+}
+
+.fullPage {
+    display: flex;
+    align-items: center;
+    color: #c5f3c5;
+    padding-top: 8vh;
+}
+
+.sign-up-button {
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.pre-logo {
+    font-family: 'UNITED BRK';
+    margin: 0px;
+    color: #9EEBCF;
+}
+
+ 
+.auto-fill:-webkit-autofill,
+.auto-fill:-webkit-autofill:hover, 
+.auto-fill:-webkit-autofill:focus, 
+.auto-fill:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+    box-shadow: 0 0 0 30px #9EEBCF inset;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -30px;
+}
+
+.icon {
+    color: rgb(37, 158, 37);
+}
+
+@media screen and (min-width: 50em) and (max-width: 70em) {
+    .w-50-m {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 30em) and (max-width: 50em) {
+    .w-50-m {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    .w-25-l {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 30em) {
+    .w-rr {
+        width: 75%;
+    }
+}
+

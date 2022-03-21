@@ -1,0 +1,70 @@
+.cont {
+    padding-top: 35vh;
+    padding-bottom: 5vh;
+}
+
+textarea {
+    height: auto;
+    resize: none;
+    width: 94%;
+    margin: 0 3%;
+    background-color: #b4c2bc;
+}
+
+.cont input {
+    background-color: #b4c2bc;;
+}
+
+.cont button {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    background: #9EEBCF;
+    font-size: 120%;
+}
+
+.cont-josh {
+    font-size: 3rem;
+}
+
+.cont button:active {
+    transform: scale(0.8);
+}
+
+.social {
+    color: rgb(9, 39, 9);
+    padding: 5px;
+}
+
+.social + h2 {
+    color: rgb(9, 39, 9);;
+}
+
+.boxes {
+    display: flex;
+}
+
+
+@media screen and (max-width: 45.5em) {
+    .boxes {
+        display: block;
+    }
+    .boxes .w-40 {
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+    .boxes .w-60 {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        margin: 0;
+    }
+    .boxes .pl3 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 34.9em) {
+    .cont-josh {
+        font-size: 2rem;
+    }
+}

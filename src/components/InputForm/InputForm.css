@@ -1,0 +1,43 @@
+.w-80 {
+    border: 1px solid #ffffff;
+    border-radius: 7px 0 0 7px;
+    background: rgba(0,0,0,0);
+}
+.w-20 {
+    color: black;
+    font-size: 120%;
+    font-weight: 1000;
+    background: rgb(123, 247, 123);
+    border: rgb(123, 247, 123);
+    border-radius: 0 7px 7px 0;
+}
+
+.txt {
+    font-weight: 500;
+    font-size: 170%;
+}
+
+.detect-btn {
+    background: #9eebcf;
+}
+
+@media screen and (max-width: 36.7em) {
+    .txt {
+        font-size: 110%;
+    }
+    .detect-btn {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 31.4em) {
+    .detect-btn {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 25.5em) {
+    .detect-btn {
+        font-size: 70%;
+    }
+}

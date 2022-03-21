@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+* {
+  font-family: 'Raleway';
+  line-height: 1.6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game {
+  padding: 0 4vw 15vh 4vw;
+  color:  white;
+  min-height: 70vh;
+  background: url(bg-dark2.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lim {
+  padding-top: 35vh;
 }
 
-.App-header {
-  background-color: #282c34;
+.preliminary-i {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: url(bg-dark.JPEG) no-repeat center center fixed;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.preliminary-o {
+  min-height: 100vh;
+  background: url(bg-dark1.JPEG) no-repeat center center fixed;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App {
+  font-weight: 200;
+}
+
+
+
+@media screen and (min-width: 35em) and (max-width: 60em) {
+  .game {
+    clip-path: polygon(0% 0%, 100% 9%, 100% 91%, 0% 100%);
   }
-  to {
-    transform: rotate(360deg);
+  .lim {
+    padding-top: 38vh;
+  }
+}
+
+@media screen and (max-width: 45.5em) {
+  .game {
+    padding: 0 4vw 12vh 4vw;
+    clip-path: polygon(0% 0%, 100% 7%, 100% 93%, 0% 100%);
+  }
+  .lim {
+    padding-top: 40vh;
+  }
+}
+
+@media screen and (max-width: 36.7em) {
+  .game {
+    padding: 0 4vw 7vh 4vw;
+    clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
+  }
+  .lim {
+    padding-top: 42vh;
   }
 }

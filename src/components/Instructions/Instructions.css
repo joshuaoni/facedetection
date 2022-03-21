@@ -1,0 +1,147 @@
+.grids {
+    display: grid;
+    gap: 40px 60px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-bottom: -130px;
+    padding-bottom: 25vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+
+.instructions {
+    display: flex;
+    align-items: center;
+}
+
+.grids img {
+    width: 480px;
+}
+
+.instruct-logo + hr {
+    width: 15%;
+    border: solid 1px rgba(0,0,0,0.3);
+}
+
+.i-img {
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.7);
+    /* border: solid 1px rgba(0,0,0,1); */
+    border-radius: 15px;
+}
+
+@font-face {
+    font-family: 'UNITED BRK';
+    font-style: normal;
+    font-weight: normal;
+    src: local('UNITED BRK'), url('united.woff') format('woff');
+}
+
+.instruct-logo {
+    font-family: 'UNITED BRK';
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+    padding-top: 2rem;
+}
+
+.instruct-comp {
+    background: #f2fdf9;
+}
+
+.hello-80-l {
+    text-align: center;
+    margin: 3vh 12vw 0 12vw;
+}
+
+
+@media screen and (min-width: 54em) and (max-width: 70em) {
+    .grids {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    .ins-50 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 30em) and (max-width: 65.3em) {
+    .grids .instructions {
+        width: 484px;
+    }
+    .ins-50 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 35em) and (max-width: 50em) {
+    .i-50-m {
+        font-size: 300%;
+    }
+    .hello-80-l {
+        margin: 3vh 16vw 0 16vw;
+    }
+}
+
+@media screen and (max-width: 40.7em) {
+    .grids {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .grids img {
+        width: 370px;
+    }
+    .grids .instructions {
+        width: 370px;
+    }
+    .ins-50 {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    .i-50-m {
+        font-size: 190%;
+    }
+    .hello-80-l {
+        margin: 3vh 14vw 0 14vw;
+        font-size: 155%;
+    }
+}
+
+@media screen and (max-width: 32em) {
+    .hello-80-l {
+        margin: 3vh 10vw 0 10vw;
+    }
+}
+
+@media screen and (max-width: 28em) {
+    .grids {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .grids img {
+        width: 315px;
+    }
+    .grids .instructions {
+        width: 315px;
+    }
+    .ins-50 {
+        font-size: 70%;
+    }
+    .hello-80-l {
+        font-size: 145%;
+        margin: 3vh 6vw 0 6vw;
+    }
+}
+
+@media screen and (max-width: 24em) {
+    .hello-80-l {
+        margin: 3vh 4vw 0 4vw;
+    }
+}
+
+
