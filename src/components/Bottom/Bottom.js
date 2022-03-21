@@ -20,7 +20,7 @@ const Bottom = () => {
                     <div style={{height: '50%'}} className=''>
                         <h3 className=' fw7 ma0 platforms f3'>Platforms</h3>
                         <div className='flex justify-end git-link'>
-                            <a title='My Github pagee' href="https://github.com/joshuaoni"
+                            <a title='Github source code' href="https://github.com/joshuaoni/facedetection"
                                 className="social">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
@@ -42,7 +42,7 @@ const Bottom = () => {
                 </div>
                 <div className='pr2 pl2 ml2 w-50'>
                     <div className='instructions' style={{height: '50%'}}>
-                        <h2 className=' ma0 designed f4 fw7'>Designed and developed by Joshua</h2>
+                        <h2 className='tc ma0 designed f4 fw7'>Designed and developed by Joshua</h2>
                     </div>
                     <div className='copyright' style={{height: '50%'}}>
                         <h2 className=' ma0 f4 fw7'>©2022 Joshua Oni</h2>
