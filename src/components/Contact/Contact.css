@@ -1,5 +1,5 @@
 .cont {
-    padding-top: 20vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
 }
 
@@ -8,11 +8,11 @@ textarea {
     resize: none;
     width: 94%;
     margin: 0 3%;
-    background-color: #b4c2bc;
+    background-color: #ccc;
 }
 
 .cont input {
-    background-color: #b4c2bc;;
+    background-color: #ccc;;
 }
 
 .cont button {
