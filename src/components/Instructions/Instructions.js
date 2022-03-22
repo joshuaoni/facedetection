@@ -17,7 +17,7 @@ const Instructions = ({user}) => {
           <div className='instructions ins-50'  ><h1>Copy the address/url of any image you find online. It could be a google image, a facebook or twitter photo, or any other online image that has a link address</h1></div>
           <img alt='img' title='Copy link address example'   height='auto' className='i-img' src={teyonah1} />
           <img alt='img' title='Copy link address example'   height='auto' className='i-img' src={got1} />
-          <div className='instructions ins-50'  ><h1>Paste the url you just copied in the space provided below, then click the Detect button (or press Enter on your keyboard) so that our API can get to work!</h1></div>
+          <div className='instructions ins-50'  ><h1>Paste the url you just copied in the space provided below, then click the Detect button (or press Enter on your keyboard) so that our API can get to work</h1></div>
           <div className='instructions ins-50'  ><h1>Ensure that there are visible faces in the photo that you choose. The number of faces in your photo doesn't matter, our face-detector API will detect them all</h1></div>
           <img alt='img'   height='auto' className='i-img' src={teyonahFace} />
           <img alt='img'   height='auto' className='i-img' src={gotFace1} />

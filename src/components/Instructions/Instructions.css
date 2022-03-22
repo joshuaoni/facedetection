@@ -4,8 +4,7 @@
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-template-rows: 1fr;
     justify-items: center;
-    margin-bottom: -130px;
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
     margin-left: 12vw;
     margin-right: 12vw;
 }
@@ -43,10 +42,6 @@
     font-size: 4rem;
     margin: 0 0 2rem 0;
     padding-top: 2rem;
-}
-
-.instruct-comp {
-    background: #f2fdf9;
 }
 
 .hello-80-l {
