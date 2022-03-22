@@ -8,7 +8,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import Instructions from './components/Instructions/Instructions';
-import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Bottom from './components/Bottom/Bottom';
 import NotFound from './components/NotFound/NotFound';
 
@@ -172,7 +172,7 @@ function App() {
           } />
           <Route 
             path='/home' 
-            element={user.name !== '' ?
+            element={
             <div>
               <Navigation 
                 reset={reset}
@@ -209,8 +209,7 @@ function App() {
               </div>
               
               <Bottom />
-            </div> :
-            <Navigate to='/' />
+            </div>
           } />
           <Route path='*' element={
             <div>

@@ -12,7 +12,7 @@ const Instructions = ({user}) => {
       <div className='instruct-comp'>
         <h1 className='tc instruct-logo i-50-m'>THE FACE-DETECTOR</h1>
         <hr />
-        <h1 className='hello-80-l pb4 fw7 mt0 f2'>Hello {user.name}, here are your instructions:</h1>
+        <h1 className='hello-80-l pb4 fw7 mt0 f2'>Hello {user.name !== '' ? user.name : <span>there</span>}, here are your instructions:</h1>
         <div className='grids mt3'>
           <div className='instructions ins-50'  ><h1>Copy the address/url of any image you find online. It could be a google image, a facebook or twitter photo, or any other online image that has a link address</h1></div>
           <img alt='img' title='Copy link address example'   height='auto' className='i-img' src={teyonah1} />
