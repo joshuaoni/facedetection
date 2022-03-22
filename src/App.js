@@ -10,6 +10,7 @@ import SignUp from './components/SignUp/SignUp';
 import Instructions from './components/Instructions/Instructions';
 import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
 import Bottom from './components/Bottom/Bottom';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
@@ -211,6 +212,15 @@ function App() {
             </div> :
             <Navigate to='/' />
           } />
+          <Route path='*' element={
+            <div>
+              <Navigation 
+                reset={reset}
+                user={user}
+              />
+              <NotFound />
+            </div>
+          }/> 
         </Routes>  
       </BrowserRouter>
     </div>

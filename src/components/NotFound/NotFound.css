@@ -1,0 +1,8 @@
+.not-found {
+    text-align: center;
+}
+  
+.not-found .f4 {
+    color: green;
+    text-decoration: underline;
+}
