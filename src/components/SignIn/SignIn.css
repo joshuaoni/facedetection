@@ -1,18 +1,30 @@
 .fullPage article {
-    border-color: rgba(144,238,144,0.5);
-    box-shadow: 0 0 0px 2px rgba(144,238,144,0.2);
+    border-color: rgba(158,235,207,0.5);
+    box-shadow: 0 0 0px 2px rgba(158,235,207,0.2);
 }
 
 .fullPage {
     display: flex;
     align-items: center;
-    color: #c5f3c5;
+    color: rgb(158, 235, 207);
     padding-top: 8vh;
 }
 
 .sign-up-button {
     font-weight: 1000;
     text-decoration: none;
+    border: 1px solid rgba(158,235,207,0.5);
+    border-radius: 50px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sign-in-btn {
+    padding: 0.7rem;
+    border: 1px solid rgba(158,235,207,0.5);
 }
 
 .pre-logo {
@@ -41,28 +53,33 @@ a {
 }
 
 .icon {
-    color: rgb(37, 158, 37);
+    color: black;
 }
 
-@media screen and (min-width: 50em) and (max-width: 70em) {
+.w-50-m {
+    width: 35%
+}
+
+@media screen and (min-width: 64.1em) and (max-width: 75em) {
     .w-50-m {
-        width: 40%;
+        width: 45%;
     }
 }
-@media screen and (min-width: 30em) and (max-width: 50em) {
+@media screen and (min-width: 45em) and (max-width: 64.1em) {
     .w-50-m {
-        width: 60%;
+        width: 55%;
+    }
+}
+@media screen and (min-width: 30em) and (max-width: 45em) {
+    .w-50-m {
+        width: 65%;
     }
 }
 
-@media screen and (min-width: 70em) {
-    .w-25-l {
-        width: 35%;
-    }
-}
+
 @media screen and (max-width: 30em) {
     .w-rr {
-        width: 75%;
+        width: 85%;
     }
 }
 

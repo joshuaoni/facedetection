@@ -3,12 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
+
 const SignUp = ({setUserData}) => {
     const [signUpName, setSignUpName] = useState('');
     const [signUpEmail, setSignUpEmail] = useState('');
     const [signUpPassword, setSignUpPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [passwordMismatch, setPasswordMismatch] = useState(null);
+    const [isPending, setIsPending] = useState(false);
 
     const navigate = useNavigate();
 
@@ -60,6 +62,7 @@ const SignUp = ({setUserData}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setIsPending(true)
         const userDetails = {name:signUpName, email:signUpEmail, password:signUpPassword, confirmPassword }
         
         fetch('https://lit-dusk-59355.herokuapp.com/signup', {
@@ -71,11 +74,14 @@ const SignUp = ({setUserData}) => {
         .then(data => {
             if (typeof data === 'object' && data !== null) {
                 setPasswordMismatch(null);
+                setIsPending(false)
                 setUserData(data)
                 navigate('/')
             } else if (data === 'Mismatch') {
+                setIsPending(false)
                 setPasswordMismatch(`Passwords don't match`)
             } else if (data === 'Email already registered') {
+                setIsPending(false)
                 setPasswordMismatch(`Email already registered, please pick another`)
                 setSignUpEmail('')
             }
@@ -86,21 +92,20 @@ const SignUp = ({setUserData}) => {
         <div>
             <h1 className='pl3 pre-logo'>FACE-DETECTOR</h1>
             <div className='fullPage'>
-                <article className="br3 bw1 mv4 w-100 w-50-m w-25-l w-rr center">
                     <form 
                         onSubmit={handleSubmit} 
-                        className=" center pa3"
+                        className="mv4 w-100 w-50-m w-25-l w-rr center pa3"
                     >
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
                             <legend className="f2 tc fw6 ph0 mh0">Sign Up</legend>
                             <div className="mt3">
-                                <label className="db fw6 lh-copy f5" htmlFor="first-name">First Name</label>
                                 <input 
-                                    className="pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 
                                     type="text" 
                                     name="first-name" 
                                     id="first-name"
                                     required
+                                    placeholder='First name'
                                     pattern='[A-Za-z]{2,}'
                                     value={signUpName}
                                     onChange={onInputChange}
@@ -108,13 +113,13 @@ const SignUp = ({setUserData}) => {
                             </div>
                             <div style={{display: 'none'}} className='f5 light-yellow db fw7' id='name-format'>Name must contain 2 or more alphabetical characters only</div>
                             <div className="mt3">
-                                <label className="db fw6 lh-copy f5" htmlFor="email-address">Email</label>
                                 <input 
-                                    className="pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 
                                     type="email" 
                                     name="email-address" 
                                     id="email-address"
                                     required
+                                    placeholder='Email'
                                     pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
                                     value={signUpEmail}
                                     onChange={onEmailChange}
@@ -122,13 +127,13 @@ const SignUp = ({setUserData}) => {
                             </div>
                             <div style={{display: 'none'}} className='f5 light-yellow db fw7' id='email-format'>Enter a valid email address</div>
                             <div className="mv3">
-                                <label className="db fw6 lh-copy f5" htmlFor="password">Password</label>
                                 <input 
-                                    className="pa2 input-reset ba bg-transparent fw f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 input-reset ba bg-transparent fw f4 hover-bg-light-green white hover-black w-100" 
                                     type="password" 
                                     name="password" 
                                     id="password"
                                     required
+                                    placeholder='Password'
                                     pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,14}'
                                     value={signUpPassword}
                                     onChange={onPasswordChange}
@@ -139,14 +144,14 @@ const SignUp = ({setUserData}) => {
                             </div>
                             
                             <div style={{display: 'none'}} className='f5 light-yellow db fw7' id='password-format'>Password must contain an upper-case letter, a lower-case letter, a number and must be betwen 6-14 characters long</div>
-                            <div className="mt3">
-                                <label className="db pt3 fw6 lh-copy f5" htmlFor="confirm-password">Confirm Password</label>
+                            <div className="mt3 pt3">
                                 <input 
-                                    className="pa2 input-reset ba bg-transparent fw5 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 input-reset ba bg-transparent fw5 f4 hover-bg-light-green white hover-black w-100" 
                                     type="password" 
                                     name="confirm-password" 
                                     id="confirm-password"
                                     required
+                                    placeholder='Confirm password'
                                     value={confirmPassword}
                                     onChange={(e)=>{
                                         setConfirmPassword(e.target.value)
@@ -162,16 +167,18 @@ const SignUp = ({setUserData}) => {
                         <div className='f5 light-yellow pt2 db fw7'>
                             {passwordMismatch}
                         </div>
+                        {isPending ? <div className='tc'>
+                            <span className='f4 white b'>Loading...</span>
+                        </div> :
                         <div>
-                            <button className="b ph3 pv2 input-reset ba mt3 light-green b--light-green bg-transparent grow pointer f6 dib">Register</button>
+                            <button className="b br-pill w-100 sign-in-btn mt3 input-reset ba light-green b--light-green bg-transparent dim pointer f6 dib">Register</button>
+                        </div>}
+                        <div className="center pb3 lh-copy mt3">
+                            <p className='f5 pt2'>Already registered?</p>
+                            <Link to='/'><p className="f6 tc light-green dim db pa2 sign-up-button">Sign in</p></Link>
+                            {/* <a href="#0" className="f6 link dim black db">Forgot your password?</a> */}
                         </div>
-                    </form>
-                    <div className="center pb3 pl3 pr3 lh-copy mt3">
-                        <p className='f5 pt2'>Already registered?</p>
-                        <Link to='/'><p className="f4 tc light-green dim db sign-up-button">Sign in</p></Link>
-                        {/* <a href="#0" className="f6 link dim black db">Forgot your password?</a> */}
-                    </div>
-                </article>
+                    </form>                
             </div>
         </div>
     );
