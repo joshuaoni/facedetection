@@ -99,7 +99,7 @@ const SignUp = ({setUserData}) => {
                             <h1 className='tc pre-logo'>FACE-DETECTOR</h1>
                             <div className="mt3">
                                 <input 
-                                    className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 white w-100" 
                                     type="text" 
                                     name="first-name" 
                                     id="first-name"
@@ -113,7 +113,7 @@ const SignUp = ({setUserData}) => {
                             <div style={{display: 'none'}} className='f5 light-yellow db fw7' id='name-format'>Name must contain 2 or more alphabetical characters only</div>
                             <div className="mt3">
                                 <input 
-                                    className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 white w-100" 
                                     type="email" 
                                     name="email-address" 
                                     id="email-address"
@@ -127,7 +127,7 @@ const SignUp = ({setUserData}) => {
                             <div style={{display: 'none'}} className='f5 light-yellow db fw7' id='email-format'>Enter a valid email address</div>
                             <div className="mv3">
                                 <input 
-                                    className="br-pill pa2 input-reset ba bg-transparent fw f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 input-reset ba bg-transparent fw f4 white w-100" 
                                     type="password" 
                                     name="password" 
                                     id="password"
@@ -145,7 +145,7 @@ const SignUp = ({setUserData}) => {
                             <div style={{display: 'none'}} className='f5 light-yellow db fw7' id='password-format'>Password must contain an upper-case letter, a lower-case letter, a number and must be betwen 6-14 characters long</div>
                             <div className="mt3 pt3">
                                 <input 
-                                    className="br-pill pa2 input-reset ba bg-transparent fw5 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="br-pill pa2 input-reset ba bg-transparent fw5 f4 white w-100" 
                                     type="password" 
                                     name="confirm-password" 
                                     id="confirm-password"
