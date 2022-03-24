@@ -90,14 +90,13 @@ const SignUp = ({setUserData}) => {
 
     return (
         <div>
-            <h1 className='pl3 pre-logo'>FACE-DETECTOR</h1>
             <div className='fullPage'>
                     <form 
                         onSubmit={handleSubmit} 
                         className="mv4 w-100 w-50-m w-25-l w-rr center pa3"
                     >
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                            <legend className="f2 tc fw6 ph0 mh0">Sign Up</legend>
+                            <h1 className='tc pre-logo'>FACE-DETECTOR</h1>
                             <div className="mt3">
                                 <input 
                                     className="br-pill pa2 auto-fill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white hover-black w-100" 

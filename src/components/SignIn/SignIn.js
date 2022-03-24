@@ -51,17 +51,16 @@ const SignIn = ({setUserData}) => {
 
     return (
         <div>
-            <h1 className='pl3 pre-logo'>FACE-DETECTOR</h1>
             <div className='fullPage'>
                     <form 
                         className="mv4 w-100 w-50-m w-25-l w-rr center pa3"
                         onSubmit={handleSubmit}
                     >
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                            <legend className="f2 tc fw6 ph0 mh0">Sign In</legend>
+                            <h1 className='tc pre-logo'>FACE-DETECTOR</h1>
                             <div className="mt3">
                                 <input 
-                                    className="pa2 br-pill input-reset ba bg-transparent fw6 f4 hover-bg-light-green white auto-fill hover-black w-100" 
+                                    className="pa2 br-pill input-reset ba bg-transparent fw6 f4 white auto-fill w-100" 
                                     type="email" 
                                     name="email-address"  
                                     id="email-address"
@@ -76,7 +75,7 @@ const SignIn = ({setUserData}) => {
                             </div>
                             <div className="pt3">
                                 <input 
-                                    className="pa2 br-pill input-reset ba bg-transparent fw5 f4 hover-bg-light-green white hover-black w-100" 
+                                    className="pa2 br-pill input-reset ba bg-transparent fw5 f4 white w-100" 
                                     type="password" 
                                     name="password" 
                                     id="password"

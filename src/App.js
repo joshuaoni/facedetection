@@ -153,7 +153,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={
-            <div className='preliminary-i'>
+            <div className='preliminary'>
               <div>
                 <SignIn 
                   setUserData={setUserData}
@@ -162,7 +162,7 @@ function App() {
             </div>
           } />
           <Route path='/signup' element={
-            <div className='preliminary-o'>
+            <div className='preliminary'>
               <div>
                 <SignUp 
                   setUserData={setUserData}

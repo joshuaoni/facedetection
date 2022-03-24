@@ -39,7 +39,14 @@
 .auto-fill:-webkit-autofill:focus, 
 .auto-fill:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px black inset !important;
-    box-shadow: 0 0 0 30px #9EEBCF inset;
+    box-shadow: 0 0 0 30px black inset;
+}
+
+input:-webkit-autofill {  
+    -webkit-text-fill-color: white;
+}
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
 }
 
 a {
