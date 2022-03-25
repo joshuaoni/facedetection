@@ -32,7 +32,7 @@ const Contact = () => {
                 <div className='boxes w-100'>
                     <div className='pl3 mt0 w-40'>
                         <div className="mt0">
-                            <label className="f3  fw7 w-100" htmlFor="name">NAME/ORGANIZATION</label>
+                            <label className="f4  fw7 w-100" htmlFor="name">NAME/ORGANIZATION</label>
                             <input 
                                 className="w-100 br3 fw7 f5 pa2 bw0" 
                                 type="text" 
@@ -45,7 +45,7 @@ const Contact = () => {
                             />
                         </div>
                         <div className="">
-                            <label className="f3 fw7  w-100" htmlFor="email">EMAIL</label>
+                            <label className="f4 fw7  w-100" htmlFor="email">EMAIL</label>
                             <input 
                                 className="w-100 br3 pa2 f5 fw7 bw0" 
                                 type="email" 
@@ -60,7 +60,7 @@ const Contact = () => {
                     </div>    
                     
                     <div className='w-60'>
-                        <label className='f3 fw7  w-100'>MESSAGE</label>
+                        <label className='f4 fw7 w-100'>MESSAGE</label>
                         <textarea
                             className='bw0 br3 pt2 pb2 pr2 pl2 fw7'
                             rows='10'

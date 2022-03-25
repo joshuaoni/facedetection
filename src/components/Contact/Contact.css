@@ -42,6 +42,13 @@ textarea {
     display: flex;
 }
 
+.boxes .w-60 label {
+    margin-left: 3%;
+}
+
+.boxes .w-40 .mt0 input {
+    margin-bottom: 0.7rem;
+}
 
 @media screen and (max-width: 45.5em) {
     .boxes {
@@ -60,6 +67,12 @@ textarea {
     }
     .boxes .pl3 {
         padding-left: 0;
+    }
+    .boxes .w-60 label {
+        margin-left: 0;
+    }
+    label + input {
+        margin-bottom: 0.7rem;
     }
 }
 
