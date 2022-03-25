@@ -9,6 +9,9 @@
     margin-right: 12vw;
 }
 
+.instruct-comp {
+    line-height: 1.4;
+}
 
 .instructions {
     display: flex;
@@ -21,13 +24,14 @@
 
 .instruct-logo + hr {
     width: 15%;
-    border: solid 1px rgba(0,0,0,0.3);
+    border: solid 0.1px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+    display: none;
 }
 
 .i-img {
-    box-shadow: 3px 3px 20px rgba(0,0,0,0.7);
-    /* border: solid 1px rgba(0,0,0,1); */
-    border-radius: 15px;
+    /* box-shadow: 3px 3px 20px rgba(0,0,0,0.7); */
+    border: solid 0.1px rgba(0,0,0,1);
 }
 
 @font-face {
@@ -40,7 +44,7 @@
 .instruct-logo {
     font-family: 'UNITED BRK';
     font-size: 4rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 0.5rem 0;
     padding-top: 2rem;
 }
 

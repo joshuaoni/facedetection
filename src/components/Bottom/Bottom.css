@@ -1,5 +1,6 @@
 .contact {
     min-height: 80vh;
+    line-height: 1.6;
 }
 
 .footer {
@@ -7,6 +8,7 @@
     padding-bottom: 2vh;
     padding-top: 2vh;
     display: flex;
+    line-height: 1.6;
 }
 
 .copyright {
