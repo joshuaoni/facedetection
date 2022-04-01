@@ -34,7 +34,7 @@ const Contact = () => {
                         <div className="mt0">
                             <label className="f4  fw7 w-100" htmlFor="name">NAME/ORGANIZATION</label>
                             <input 
-                                className="w-100 br3 fw7 f5 pa2 bw0" 
+                                className="w-100 br1 fw7 f5 pa2 bw0" 
                                 type="text" 
                                 name="name"  
                                 id="name"
@@ -47,7 +47,7 @@ const Contact = () => {
                         <div className="">
                             <label className="f4 fw7  w-100" htmlFor="email">EMAIL</label>
                             <input 
-                                className="w-100 br3 pa2 f5 fw7 bw0" 
+                                className="w-100 br1 pa2 f5 fw7 bw0" 
                                 type="email" 
                                 name="email" 
                                 id="email"
@@ -62,7 +62,7 @@ const Contact = () => {
                     <div className='w-60'>
                         <label className='f4 fw7 w-100'>MESSAGE</label>
                         <textarea
-                            className='bw0 br3 pt2 pb2 pr2 pl2 fw7'
+                            className='bw0 br1 pt2 pb2 pr2 pl2 fw7'
                             rows='10'
                             required
                             name='message'
@@ -75,7 +75,7 @@ const Contact = () => {
                 </div>
                 
                 <div className='flex justify-center'>
-                    <button className=" br3 mt3 pointer dim pr3 pl3 pt2 pb2 bw0 fw7">SEND</button>
+                    <button className=" br1 mt3 pointer pr3 pl3 pt2 pb2 bw0 fw7">SEND</button>
                 </div>
             </form>
             <div>{result ? <h3 className='tc f3'>Your message was sent successfully.<br/> I will contact you soon!</h3> : null}</div>

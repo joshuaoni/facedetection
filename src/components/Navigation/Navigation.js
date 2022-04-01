@@ -11,7 +11,7 @@ const Navigation = ({reset, user}) => {
     }
 
     return (
-        <nav className='flex ma0 bb b--black pa2'>
+        <nav className='flex ma0 bb b--black'>
             <div onClick={clickLogo} className='instructions pointer pl2 justify-start'>
                 <h1 className='logo-name'>FACE-DETECTOR</h1>
             </div>

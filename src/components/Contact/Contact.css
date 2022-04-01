@@ -16,8 +16,7 @@ textarea {
 }
 
 .cont button {
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-    background: #9EEBCF;
+    background: #63e9b8;
     font-size: 120%;
 }
 
@@ -27,6 +26,11 @@ textarea {
 
 .cont button:active {
     transform: scale(0.8);
+}
+
+.cont button:hover {
+    color: #63e9b8;
+    background: black;
 }
 
 .social {
