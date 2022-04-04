@@ -42,16 +42,25 @@
   .lim {
     padding-top: 38vh;
   }
+  .game {
+    clip-path: polygon(0% 0%, 100% 7.5%, 100% 100%, 0% 100%);
+  }
 }
 
 @media screen and (max-width: 45.5em) {
   .lim {
     padding-top: 40vh;
   }
+  .game {
+    clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
+  }
 }
 
 @media screen and (max-width: 36.7em) {
   .lim {
     padding-top: 42vh;
+  }
+  .game {
+    clip-path: polygon(0% 0%, 100% 2.5%, 100% 100%, 0% 100%);
   }
 }
