@@ -22,7 +22,7 @@ const FaceRecognition = ({imgUrl, box, modelDown}) => {
             })}
             
         </div>}
-        {modelDown && <h2 style={{fontWeight: '200'}} className='tc'>Looks like you encountered an error. Please paste in a different image link or come back in a few minutes : )</h2>}
+        {modelDown && <h2 style={{fontWeight: '200'}} className='tc'>Looks like you encountered an error. Pleasse check that the link you entered is a valid image URL, or paste in a different image link. Come back in a few minutes if you still encounter this error : )</h2>}
     </div>
     );
 }

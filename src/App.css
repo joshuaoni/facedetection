@@ -12,7 +12,7 @@
   line-height: 1.6;
   background: url(IZAD8346.JPEG) no-repeat center center;
   background-size: cover;
-  clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
 }
 
 .lim {
@@ -39,29 +39,18 @@
 
 
 @media screen and (min-width: 35em) and (max-width: 60em) {
-  .game {
-    clip-path: polygon(0% 0%, 100% 9%, 100% 91%, 0% 100%);
-  }
   .lim {
     padding-top: 38vh;
   }
 }
 
 @media screen and (max-width: 45.5em) {
-  .game {
-    padding: 0 4vw 12vh 4vw;
-    clip-path: polygon(0% 0%, 100% 7%, 100% 93%, 0% 100%);
-  }
   .lim {
     padding-top: 40vh;
   }
 }
 
 @media screen and (max-width: 36.7em) {
-  .game {
-    padding: 0 4vw 7vh 4vw;
-    clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
-  }
   .lim {
     padding-top: 42vh;
   }

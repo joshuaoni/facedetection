@@ -1,6 +1,7 @@
 import React from 'react';
 import './Bottom.css';
-import Contact from '../Contact/Contact';
+import '../Contact/Contact.css'
+// import Contact from '../Contact/Contact';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -11,10 +12,10 @@ import {
 
 const Bottom = () => {
     return (
-        <div style={{minHeight: '110vh'}}>
-            <div className='contact'>
+        <div >
+            {/* <div className='contact'>
                 <Contact />
-            </div>
+            </div> */}
             <div className='footer w-100'>
                 <div className='platforms-e pr3 w-50'>
                     <div style={{height: '50%'}} className=''>
