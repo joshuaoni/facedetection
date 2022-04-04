@@ -1,4 +1,4 @@
-##Face detection web application
+## Face detection web application
 Users get to input image links and any faces present in provided images will get detected using the face detection API
 
 ## Creator
